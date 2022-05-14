@@ -1,0 +1,550 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Document settings vvvv*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../IMAGES/bgimage_optimized03.jpg");
+    background-size: cover;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin: 10px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0px;
+    text-align: left;
+    padding: 2px 5px;
+}
+
+h2,
+h3 {
+    width: 82%;
+    word-wrap: break-word;
+}
+
+h2 {
+    font-size: 17pt;
+    color: darkgoldenrod;
+}
+
+h3 {
+    font-size: 12pt;
+    color: black;
+    margin: 0px;
+}
+
+h5 {
+    float: left;
+    margin-left: 630px;
+    margin-top: 5px;
+}
+
+blog {
+    float: left;
+    background-color:lightcoral;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    width: 92.5%;
+}
+
+blog h2{
+    color: white;
+}
+
+article h3 {
+    float: left;
+    width: 95%;
+    height: 150px;
+    background: #ccc;
+    padding: 20px;
+    margin: auto;
+    margin-top: -20px;
+}
+
+article h4{
+    float: left;
+    width: 95%;
+    height: 10px;
+    background: #ccc;
+    padding: 20px;
+    margin-top: 0px;
+    font-size: 15px;
+    color: floralwhite;
+}
+
+article {
+    background: #ccc;
+}
+
+table {
+    background: #ccc;
+    width: 100%;
+    float: right;
+}
+
+/*Header vvvvvvvv*/
+
+#header {
+    background-color: floralwhite;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1#title {
+    margin: 10px;
+    width: 50%;
+    text-align: left;
+}
+
+#menu {
+    display: inline-block;
+    width: 42%;
+}
+
+#content {
+    display: table;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.topnav {
+    width: 100%;
+    margin: 0px;
+    margin: 20px 0px;
+    line-height: 35px;
+    float: left;
+    background-color: burlywood;
+}
+
+.topnav a {
+    /* float: left;
+    display: block;*/
+    color: dimgray;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.topnav ul {
+    float: left;
+}
+
+.topnav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+#caption {
+    align-content: center;
+}
+
+.topnav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #bbc7db;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+    z-index: 1000;
+}
+
+.topnav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: bisque;
+    padding: 9px;
+    padding-right: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.topnav ul li ul li {
+    padding: 8px 14px;
+}
+
+.topnav ul li ul li a {
+    border-radius: 4px;
+}
+
+.topnav ul li ul li a:hover {
+    background-color: burlywood;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*ul#aa {
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+}
+
+ul#aa li {
+    display: inline;
+    padding: 10px;
+}
+*/
+
+
+
+/*Body   vvvvvvvvv*/
+
+body {
+    margin: 20px;
+}
+
+.lefta {
+    width: 75%;
+    padding: 10px 5px;
+    margin: 10px 15px;
+}
+
+.righta {
+    flex-basis: 25%;
+    padding: 25px 20px;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textaa {
+    padding: 10px;
+    background-color: antiquewhite;
+    width: 80%;
+}
+
+.linkedimg:hover {
+    border: 1px solid #777;
+}
+
+#placeholderimage_aa {
+    width: 720px;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    display: block;
+}
+
+#placeholderimage_ab {
+    width: 280px;
+    height: auto;
+    margin: 10px 50px 10px 10px;
+    text-align: center;
+    display: block;
+}
+
+p.maintext {
+    margin: 10px 4%;
+    width: 82%;
+    word-wrap: break-word;
+    font-size: 14pt;
+    text-align: left;
+}
+
+.textab {
+    padding: 10px;
+    background-color: antiquewhite;
+    width: 80%;
+}
+
+p.columntext {
+    margin: 10px 4%;
+    width: 82%;
+    word-wrap: break-word;
+    font-size: 14pt;
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    clear: both;
+}
+
+.flex-container > div {
+    color: white;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 38px;
+}
+
+.flex-container02 {
+    display: flex;
+    justify-content: center;
+    clear: both;
+}
+
+.flex-container02 > div {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 38px;
+}
+
+#flex-container02-left {
+    width: 20%;
+}
+
+#flex-container02-right {
+    width: 80%;
+    margin: 5px;
+}
+
+.flex-container03 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    clear: both;
+}
+
+.flex-container03 > div {
+    color: black;
+    width: 24%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 38px;
+}
+
+.carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left:-30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right:-30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.light{
+    color:white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+/* Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('https:static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+    background-size: cover;
+}
+
+.item-2 {
+    background:url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    background-size: cover;
+}
+
+.item-3 {
+    background:url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+    background-size: cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+#line-height {
+    line-height: 20px;
+}
+
+.gallery {
+    position: relative;
+    width: 75%;
+    margin: 25px;
+    padding: 0px 10px;
+    align-content: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.Nutrition{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
+
+.caption-container {
+    text-align: center;
+    background-color: burlywood;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column01 {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*Footer vvvvvvvvv*/
+
+#footer {
+    position: relative;
+    margin-top: -180px;
+    bottom: 0;
+    width: 100% height: 2rem;
+    background-color: #F5AC47;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+}
+
+.column {
+    margin: 10px 8px;
+}
+
+.leftb {
+    width: 18%;
+    flex-basis: 20%;
+    padding: 8px 0px 5px 10px;
+    margin-left: 5%;
+}
+
+.rightb {
+    flex-basis: 82%;
+    padding: 25px 5px 0px 15px;
+    text-align: center;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+ul#ab {
+    list-style-image: url('../IMAGES/bulletpoint_optimized.png');
+    min-width: 650px;
+    margin: 0px 10px;
+    padding: 0px 20px;
+}
+
+ul#ab li {
+    font-size: 16px;
+}
+
+a.aa {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Penny Juice - Healthy Lifestyle Website</title>
+    <meta name="Keywords" content="Las Vegas, Healthy Lifestyle, Pre School, Juices">
+    <meta name="author" content="Jon Sevilla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/mystyle.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="menu">
+                <img src="../IMAGES/pennyjuice-logo2_Sevilla.png" height="100px" width="100px"><h1 id="title">penny juice</h1>
+            </div>
+            <div id="menu">
+                <div id="search">
+                    <input type="email" placeholder="Type here to search">
+                    <button type="submit">
+                        <span class="button">Search</span>
+                    </button>
+                </div>
+            </div>
+            <div id="content">
+                <div class="topnav">
+                    <ul id="aa">
+                        <li><a href="../HTML/index.html">Home</a></li>
+                        <li><a href="../HTML/about.html">About</a></li>
+                        <li><a href="../HTML/flavors.html">Flavors</a>
+                            <ul>
+                                <li><a href="../HTML/Flavor_orange.html">Orange</a></li>
+                                <li><a href="../HTML/Flavor_grape.html">Grape</a></li>
+                                <li><a href="../HTML/Flavor_apple.html">Apple</a></li>
+                                <li><a href="../HTML/Flavor_bananna.html">Bananna</a></li>
+                                <li><a href="../HTML/Flavor_pineapple.html">Pineapple</a></li>
+                                <li><a href="../HTML/Flavor_fruitpunch.html">Fruit Punch</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../HTML/ingredients.html"><b>Ingredients</b></a></li>
+                        <li><a href="../HTML/blog.html">Blog</a></li>
+                        <li><a href="../HTML/customer.html">Customer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="body">
+            <div class="grid">
+                <div class="column lefta">
+                    <center>
+                        <div class="gallery">
+                            <div class="caption-container">
+                                <!--<p id="caption" style="font-weight: bolder;"></p>-->
+                                <h2 id="caption" class="Nutrition"></h2>
+                            </div>
+                            <div class="mySlides">
+                                <img src="../IMAGES/ingredient_orange_nutrition_label.jpg" style="width:100%" alt="Penny Juice Healthy Natural Flavors - Orange Flavor">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../IMAGES/ingredient_orange_nutrition_label.jpg" style="width:100%" alt="Penny Juice Healthy Natural Flavors - Orange Flavor">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../IMAGES/ingredient_orange_nutrition_label.jpg" style="width:100%" alt="Penny Juice Healthy Natural Flavors - Orange Flavor">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../IMAGES/ingredient_orange_nutrition_label.jpg" style="width:100%" alt="Penny Juice Healthy Natural Flavors - Orange Flavor">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../IMAGES/ingredient_orange_nutrition_label.jpg" style="width:100%" alt="Penny Juice Healthy Natural Flavors - Orange Flavor">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="../IMAGES/ingredient_orange_nutrition_label.jpg" style="width:100%" alt="Penny Juice Healthy Natural Flavors - Orange Flavor">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="caption-container"><br /></div>
+
+                            <div class="row">
+                                <div class="column01">
+                                    <img class="demo cursor" src="../IMAGES/PJ_flavors_orange_but1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Orange Juice - Nutrition Label">
+                                </div>
+                                <div class="column01">
+                                    <img class="demo cursor" src="../IMAGES/PJ_flavors_grape_but2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Grape Juice - Nutrition Label">
+                                </div>
+                                <div class="column01">
+                                    <img class="demo cursor" src="../IMAGES/PJ_flavors_apple_but3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Apple Juice - Nutrition Label">
+                                </div>
+                                <div class="column01">
+                                    <img class="demo cursor" src="../IMAGES/PJ_flavors_banana_but4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Bananna Juice - Nutrition Label">
+                                </div>
+                                <div class="column01">
+                                    <img class="demo cursor" src="../IMAGES/PJ_flavors_pineapple_but5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Pineapple Juice - Nutrition Label">
+                                </div>
+                                <div class="column01">
+                                    <img class="demo cursor" src="../IMAGES/PJ_flavors_fruitpunch_but6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Fruit Punch Juice - Nutrition Label">
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            function showSlides(n) {
+                                let i;
+                                let slides = document.getElementsByClassName("mySlides");
+                                let dots = document.getElementsByClassName("demo");
+                                let captionText = document.getElementById("caption");
+                                if (n > slides.length) {
+                                    slideIndex = 1
+                                }
+                                if (n < 1) {
+                                    slideIndex = slides.length
+                                }
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex - 1].style.display = "block";
+                                dots[slideIndex - 1].className += " active";
+                                captionText.innerHTML = dots[slideIndex - 1].alt;
+                            }
+                            let slideIndex = 1;
+                            showSlides(slideIndex);
+
+                            function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                            }
+
+                            function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                            }
+                        </script>
+                    </center>
+                    <br />
+                    <center>
+
+                        <div class="textaa">
+
+                        </div>
+                    </center>
+                    <br />
+                    <div class="flex-container">
+                        <div><img src="../IMAGES/button01.jpg" alt="Penny Juice - Healthy Lifestyle Website" class="linkedimg" width="164" height="176"></div>
+                        <div><img src="../IMAGES/button01.jpg" alt="Penny Juice - Healthy Lifestyle Website" class="linkedimg" width="164" height="176"></div>
+                        <div><img src="../IMAGES/button01.jpg" alt="Penny Juice - Healthy Lifestyle Website" class="linkedimg" width="164" height="176"></div>
+                    </div>
+                    <br />
+                </div>
+                <div class="column righta">
+                    <center><a href="../HTML/ingredients.html"><img src="../IMAGES/orangeinhand_optimized.jpg" alt="hand holding orange" class="linkedimg" id="placeholderimage_ab"></a>
+                    </center>
+
+                    <br /><br />
+                    <div class="textab">
+                        <h3>Try the new flavor, Candy Apple</h3>
+                        <p class="coulumntext">&emsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div id="footer">
+        <div class="grid">
+            <div class="column leftb">
+                <ul id="ab">
+                    <li><a class="aa" href="../HTML/index.html"><b>Home</b></a></li>
+                    <li><a class="aa" href="../HTML/about.html">About</a></li>
+                    <li><a class="aa" href="../HTML/flavors.html">Flavors</a></li>
+                    <li><a class="aa" href="../HTML/ingredients.html">Ingredients</a></li>
+                    <li><a class="aa" href="../HTML/blog.html">Blog</a></li>
+                    <li><a class="aa" href="../HTML/customer.html">Customer</a></li>
+                </ul>
+
+                <p>Enter your email to sign up for our newletters for special promotions.</p>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">
+                    <span class="button">Subscribe</span>
+                </button>
+            </div>
+            <div class="column rightb">
+                <p>Privacy Policy | Cookie Policy | Conditions of Use | Notice and Take Down Policy | Website Accessibility Policy
+                    © 2022 The content on this website is owned by us and our licensors. Do not copy any content (including images) without our consent</p>
+            </div>
+        </div>
+    </div>
+
+</footer></html>
